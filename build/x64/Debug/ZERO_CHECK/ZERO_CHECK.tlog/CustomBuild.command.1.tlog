@@ -1,0 +1,10 @@
+^C:\USERS\HAMCY\ONEDRIVE\DESKTOP\VIDEO-EDITOR\BUILD\CMAKEFILES\A13888C705AC52291F3042376A2ACBE2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hamcy/OneDrive/Desktop/video-editor -BC:/Users/hamcy/OneDrive/Desktop/video-editor/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hamcy/OneDrive/Desktop/video-editor/build/VideoEditor.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
